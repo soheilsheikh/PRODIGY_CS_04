@@ -2,6 +2,8 @@
 
 ## Keystroke Reporting Tool
 
+![Keystr0ke_icon](https://github.com/user-attachments/assets/f4e9a62a-37d7-4f08-ab54-e0c52bd7f0ac)
+
 **Introduction:**
 >This program aims to develop a comprehensive cybersecurity monitoring and reporting tool that collects various system activities and sends encrypted reports via email. It includes features such as keylogging, system information gathering, clipboard monitoring, audio recording, screenshot capture, and secure file encryption before transmission.
 
