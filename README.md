@@ -1,9 +1,9 @@
-#PRODIGY_CS_04
+# PRODIGY_CS_04
 
-### Cybersecurity Monitoring and Reporting Tool
+## Keystroke Reporting Tool
 
 **Introduction:**
-This program aims to develop a comprehensive cybersecurity monitoring and reporting tool that collects various system activities and sends encrypted reports via email. It includes features such as keylogging, system information gathering, clipboard monitoring, audio recording, screenshot capture, and secure file encryption before transmission.
+>This program aims to develop a comprehensive cybersecurity monitoring and reporting tool that collects various system activities and sends encrypted reports via email. It includes features such as keylogging, system information gathering, clipboard monitoring, audio recording, screenshot capture, and secure file encryption before transmission.
 
 **Features and Functionality:**
 
@@ -38,4 +38,5 @@ This program aims to develop a comprehensive cybersecurity monitoring and report
     - Deletes temporary files (`system_information`, `clipboard_information`, `keys_information`, `screenshot_information`, `audio_information`) after successful transmission to maintain operational stealth and minimize traces.
 
 **Conclusion:**
-This cybersecurity monitoring and reporting tool provides a robust mechanism for capturing, encrypting, and transmitting critical system activities for security analysis. It serves as a proactive measure against potential threats and unauthorized activities, making it suitable for both educational purposes and real-world cybersecurity applications. By integrating multiple monitoring techniques and encryption methods, it ensures data integrity and confidentiality throughout the monitoring and reporting process.
+>This cybersecurity monitoring and reporting tool provides a robust mechanism for capturing, encrypting, and transmitting critical system activities for security analysis.
+>It serves as a proactive measure against potential threats and unauthorized activities, making it suitable for both educational purposes and real-world cybersecurity applications. By integrating multiple monitoring techniques and encryption methods, it ensures data integrity and confidentiality throughout the monitoring and reporting process.
