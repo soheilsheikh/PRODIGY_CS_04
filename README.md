@@ -1,44 +1,45 @@
-# PRODIGY_CS_04
-
-## Keystroke Reporting Tool
+# Keystroke Reporting Tool
 
 ![Keystr0ke_icon](https://github.com/user-attachments/assets/f4e9a62a-37d7-4f08-ab54-e0c52bd7f0ac)
 
-**Introduction:**
->This program aims to develop a comprehensive cybersecurity monitoring and reporting tool that collects various system activities and sends encrypted reports via email. It includes features such as keylogging, system information gathering, clipboard monitoring, audio recording, screenshot capture, and secure file encryption before transmission.
+## Introduction
 
-**Features and Functionality:**
+This program develops a comprehensive cybersecurity monitoring and reporting tool that collects various system activities and sends encrypted reports via email. It includes features such as keylogging, system information gathering, clipboard monitoring, audio recording, screenshot capture, and secure file encryption before transmission.
 
-1. **Keylogging:**
-   - Monitors keystrokes and saves them to a file (`key_log.txt`). This helps in capturing user input which can be crucial for security audits and forensic investigations.
+## Features and Functionality
 
-2. **System Information Gathering:**
-   - Retrieves system details (`syseminfo.txt`) including hostname, IP addresses (public and private), processor information, operating system details, and machine architecture. This information provides insights into the system's configuration and potential vulnerabilities.
+### 1. Keylogging
+Monitors keystrokes and saves them to a file (`key_log.txt`). This helps in capturing user input which can be crucial for security audits and forensic investigations.
 
-3. **Clipboard Monitoring:**
-   - Captures clipboard contents (`clipboard.txt`) to track copied data. This can reveal sensitive information such as passwords or confidential messages.
+### 2. System Information Gathering
+Retrieves system details (`syseminfo.txt`) including hostname, IP addresses (public and private), processor information, operating system details, and machine architecture. This information provides insights into the system's configuration and potential vulnerabilities.
 
-4. **Audio Recording:**
-   - Records audio (`audio.wav`) from the microphone for a specified duration. This feature aids in capturing ambient sound or potential conversations in the vicinity of the monitored system.
+### 3. Clipboard Monitoring
+Captures clipboard contents (`clipboard.txt`) to track copied data. This can reveal sensitive information such as passwords or confidential messages.
 
-5. **Screenshot Capture:**
-   - Takes screenshots (`screenshot.png`) of the desktop. This visual data helps in understanding user activities and the system's operational context.
+### 4. Audio Recording
+Records audio (`audio.wav`) from the microphone for a specified duration. This feature aids in capturing ambient sound or potential conversations in the vicinity of the monitored system.
 
-6. **Email Reporting:**
-   - Encrypts and sends collected data securely via email using SMTP. This ensures that sensitive information is protected during transmission (`e_key_log.txt`, `e_systeminfo.txt`, `e_clipboard.txt`).
+### 5. Screenshot Capture
+Takes screenshots (`screenshot.png`) of the desktop. This visual data helps in understanding user activities and the system's operational context.
 
-7. **Encryption:**
-   - Uses symmetric encryption (Fernet encryption from the `cryptography` library) to secure collected files (`system_information`, `clipboard_information`, `keys_information`). Encrypted files are sent as attachments to mitigate unauthorized access during transit.
+### 6. Email Reporting
+Encrypts and sends collected data securely via email using SMTP. This ensures that sensitive information is protected during transmission (`e_key_log.txt`, `e_systeminfo.txt`, `e_clipboard.txt`).
 
-8. **Operational Control:**
-   - Allows configuration of email credentials (`email_address` and `password`), recipient address (`toaddr`), file paths (`file_path`), and encryption key (`key`) for customization and operational control.
+### 7. Encryption
+Uses symmetric encryption (Fernet encryption from the `cryptography` library) to secure collected files (`system_information`, `clipboard_information`, `keys_information`). Encrypted files are sent as attachments to mitigate unauthorized access during transit.
 
-9. **Automated Execution:**
-   - Implements a time-based iteration loop to execute monitoring activities at specified intervals (`time_iteration` and `number_of_iterations_end`). This ensures continuous data collection and reporting over extended periods.
+### 8. Operational Control
+Allows configuration of email credentials (`email_address` and `password`), recipient address (`toaddr`), file paths (`file_path`), and encryption key (`key`) for customization and operational control.
 
-10. **Cleanup Mechanism:**
-    - Deletes temporary files (`system_information`, `clipboard_information`, `keys_information`, `screenshot_information`, `audio_information`) after successful transmission to maintain operational stealth and minimize traces.
+### 9. Automated Execution
+Implements a time-based iteration loop to execute monitoring activities at specified intervals (`time_iteration` and `number_of_iterations_end`). This ensures continuous data collection and reporting over extended periods.
 
-**Conclusion:**
->This cybersecurity monitoring and reporting tool provides a robust mechanism for capturing, encrypting, and transmitting critical system activities for security analysis.
->It serves as a proactive measure against potential threats and unauthorized activities, making it suitable for both educational purposes and real-world cybersecurity applications. By integrating multiple monitoring techniques and encryption methods, it ensures data integrity and confidentiality throughout the monitoring and reporting process.
+### 10. Cleanup Mechanism
+Deletes temporary files (`system_information`, `clipboard_information`, `keys_information`, `screenshot_information`, `audio_information`) after successful transmission to maintain operational stealth and minimize traces.
+
+## Conclusion
+
+This cybersecurity monitoring and reporting tool provides a robust mechanism for capturing, encrypting, and transmitting critical system activities for security analysis.
+
+It serves as a proactive measure against potential threats and unauthorized activities, making it suitable for both educational purposes and real-world cybersecurity applications. By integrating multiple monitoring techniques and encryption methods, it ensures data integrity and confidentiality throughout the monitoring and reporting process.
